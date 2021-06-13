@@ -1,0 +1,121 @@
+.main-page{
+  text-align: center;
+  &__header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: #2196F3;
+    z-index: 100;
+  }
+  &__logo{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: normal;
+    padding: 10px;
+    margin: 0;
+  }
+  &__count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    & input{
+      line-height: 1.5;
+      width: 80px !important;
+      margin: 0 20px !important;
+      padding: 3px 6px;
+    }
+  }
+  
+  & #count::-webkit-inner-spin-button { 
+    opacity: 1;
+  }
+  &__title{
+    margin-top: 0;
+    font-size: 24px;
+  }
+  &__cards{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  &__result{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  &__not-found{
+    margin: 20px auto;
+    font-size: 20px;
+    font-style: italic;
+    color: blue;
+  }
+}
+
+.material-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  margin: 15px;
+  width: 20%;     
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 15px;
+  color: black;
+  transition: .2s ease-out;
+  &:hover{
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  }
+  &__block-img{
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  &__img{
+    object-fit: cover;
+  }
+  &__name{
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  &__footer{
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__price{
+    & span{
+      font-size: 32px;
+      margin-right: 8px;
+    }
+  }
+  &__cost{
+    color: green;
+    line-height: 1;
+    margin-top: 10px;
+    & span{
+      font-size: 32px;
+      margin: 0 8px;
+    }
+  }
+  &__not-found{
+    margin: 20px auto;
+    font-size: 20px;
+    font-style: italic;
+    color: blue;
+  }
+}
